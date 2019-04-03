@@ -1,6 +1,6 @@
 using System;
 
-namespace GUI.lab19.Models
+namespace GUI.lab18.Models
 {
     public class ErrorViewModel
     {

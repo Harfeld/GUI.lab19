@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using GUI.lab19.Models;
+using GUI.lab18.Models;
 
-namespace GUI.lab19.Controllers
+namespace GUI.lab18.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,7 +15,17 @@ namespace GUI.lab19.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Menu()
+        {
+            return View();
+        }
+
+        public IActionResult Music()
+        {
+            return View();
+        }
+
+        public IActionResult Jobs()
         {
             return View();
         }

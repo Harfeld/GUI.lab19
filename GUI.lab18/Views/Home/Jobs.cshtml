@@ -1,0 +1,27 @@
+﻿@model GUI.lab19.Models.Applicant
+@{
+}
+Want to work at JavaJam? Fill out th form below to start your application.
+
+<form asp-controller="Applicants" asp-action="Create" id="JobForm">
+    <table border="0">
+        <tr>
+            <td asp-for="_Name" align="right">Name:</td>
+            <td><input type="text" id="name" name="name" required="Skal udfyldes"/></td>
+        </tr>
+        <tr>
+            <td asp-for="_Email" align="right">E-mail:</td>
+            <td><input type="email" id="email" name="email" required/></td>
+        </tr>
+        <tr>
+            <td asp-for="_Experience" align="right" valign="top">Experience:</td>
+            <td>
+                <textarea id="experience" name="experience" rows="4"
+                          cols="40" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Aplly Now"></td>
+        </tr>
+    </table>
+</form>
